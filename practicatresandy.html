@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>  <title>Andy Rios Practica 3</title>
+<script src="javasandy.js"></script>
+
+</head>
+
+<body style="background-color: #92A8D1;">
+
+
+    <h1> <center> Programación aplicada a la multimedia</center></h1>
+    <h2>Resolución de problemas sobre JavaScript con HTML</h2>
+    <marquee direction="right" style="border:BLACK 2xp SOLID">Práctica 3</marquee>
+ <br>
+
+    <form>
+        <fieldset>
+        <legend> Problema 1</legend>
+    <br>
+        <label for="celsios">Grados Celsius: </label>
+    <br>
+     <br>
+        <input type="text" value="0" id="celsios" name="celsios" style="background-color: rgb(120, 169, 169);">
+    <h4>Resultado en Grados Farenheit: </h4> &nbsp; <b> <p id="farenheit">Na</p></b>
+        <u><span id="transf"></span></u>
+    <br>
+        <input type="button" name="btnCacular" value="Calcular" onclick= "convertirgradosCentigradosAGradosFarenheit()">
+
+    <br>
+<br>
+</fieldset>
+</form>
+<br><br><br>
+
+<form>
+<fieldset>
+        <legend>Problema 2</legend>
+    <br>
+        <label for="val">Numero a evaluar: </label>
+        <input type="text" value="" id="val" name="val" style="background-color: rgb(120, 169, 169);">
+    <br>
+<u>    <span id="calc"></span> </u>
+    <br>
+<br>
+    <input type="button" name="RealizarCalculo" value="Calcular" onclick="calcularPorcentajes()">
+   
+<br>
+    <br>
+</form>
+</fieldset>
+<br>
+<br>
+<br>
+<form action="">
+<fieldset>
+        <legend>Generar una tabla con orden descendente: </legend>
+    <br>
+        <label for="filas">Numero de filas</label>
+        <input type="number"
+        value="0" id="filas"
+        name="filas"
+        style="background-color: rgb(120, 169, 169);">
+     <br>
+    <br>
+    <label for="columnas">Numero de columnas</label>
+<input type="number"
+ value="0"
+ id="columnas"
+ name="columnas"
+ style="background-color: rgb(120, 169, 169);">
+        <br>
+            <br>
+ <input type="button" name="genTabla" value="Crear"
+            onclick= "generarTablaHTML()">
+            <br>
+     <span id="ord"></span>
+</fieldset>
+</form>
+</body>
+</html>
